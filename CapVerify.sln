@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{22AA54A0-4D73-4838-A83C-BE74C2EC635C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{3F292707-5C4E-404D-8A43-A034361B7EEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Data", "2 - Data", "{E6DDCBE5-9C7A-48B7-A014-2FF06DDF61C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapVerify.Api", "CapVerify.Api\CapVerify.Api.csproj", "{B7B2F454-A9B3-4D75-8008-16D470988781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapVerify.Data", "CapVerify.Data\CapVerify.Data.csproj", "{F5865E20-FDF5-4704-8A63-ACAAA3B93964}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Identity", "3 - Identity", "{D4399142-506F-40C3-9383-727E379754C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapVerify.Identity", "CapVerify.Identity\CapVerify.Identity.csproj", "{FD0B5299-323B-4670-B594-A3FEB6338DD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7B2F454-A9B3-4D75-8008-16D470988781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B2F454-A9B3-4D75-8008-16D470988781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B2F454-A9B3-4D75-8008-16D470988781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B2F454-A9B3-4D75-8008-16D470988781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5865E20-FDF5-4704-8A63-ACAAA3B93964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5865E20-FDF5-4704-8A63-ACAAA3B93964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5865E20-FDF5-4704-8A63-ACAAA3B93964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5865E20-FDF5-4704-8A63-ACAAA3B93964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0B5299-323B-4670-B594-A3FEB6338DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0B5299-323B-4670-B594-A3FEB6338DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0B5299-323B-4670-B594-A3FEB6338DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0B5299-323B-4670-B594-A3FEB6338DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7B2F454-A9B3-4D75-8008-16D470988781} = {3F292707-5C4E-404D-8A43-A034361B7EEB}
+		{F5865E20-FDF5-4704-8A63-ACAAA3B93964} = {E6DDCBE5-9C7A-48B7-A014-2FF06DDF61C5}
+		{FD0B5299-323B-4670-B594-A3FEB6338DD7} = {D4399142-506F-40C3-9383-727E379754C4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {144A9512-4D06-4DE3-97EE-6E80364D7013}
+	EndGlobalSection
+EndGlobal
