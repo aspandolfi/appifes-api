@@ -18,6 +18,10 @@ namespace CapVerify.Data.Mappings
             builder.Property(t => t.Descricao)
                 .IsRequired()
                 .HasMaxLength(250);
+
+            builder.HasOne(x => x.UserIdentity)
+                .WithMany()
+                .HasForeignKey(x => x.UserId);
         }
     }
 }

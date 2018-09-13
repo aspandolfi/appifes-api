@@ -1,8 +1,8 @@
-﻿using CapVerify.Domain.Models;
+﻿using CapVerify.Data.Mappings;
+using CapVerify.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace CapVerify.Data.Context
 {
@@ -13,13 +13,20 @@ namespace CapVerify.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new TituloCapitalizacaoMap());
+            modelBuilder.ApplyConfiguration(new UserIdentityMap());
 
             base.OnModelCreating(modelBuilder);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder);
+            var config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
         }
     }
 }

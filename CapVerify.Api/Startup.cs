@@ -26,10 +26,6 @@ namespace CapVerify.Api
         {
             services.AddDataProtection();
 
-            services.AddDbContext<CapVerifyContext>();
-
-            services.AddIdentityServer();
-
             services.AddMvc();
         }
 
