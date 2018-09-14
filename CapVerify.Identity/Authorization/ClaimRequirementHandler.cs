@@ -18,6 +18,5 @@ namespace CapVerify.Identity.Authorization
 
             return Task.CompletedTask;
         }
-    {
     }
 }

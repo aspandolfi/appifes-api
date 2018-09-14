@@ -1,14 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using CapVerify.Domain.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CapVerify.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class ValuesController : ControllerBase
     {
+        readonly IUser user;
+
+        public ValuesController(IUser user)
+        {
+            this.user = user;
+        }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()

@@ -1,8 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CapVerify.Data\CapVerify.Data.csproj" />
+    <ProjectReference Include="..\CapVerify.Domain\CapVerify.Domain.csproj" />
+    <ProjectReference Include="..\CapVerify.Identity\CapVerify.Identity.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Microsoft.AspNetCore.Http">

@@ -6,9 +6,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace CapVerify.Identity.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationUserDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationUserDbContext(DbContextOptions<ApplicationUserDbContext> options) : base(options)
         {
         }
 
