@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CapVerify.Api.Controllers
 {
-    [Produces("appplication/json")]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
