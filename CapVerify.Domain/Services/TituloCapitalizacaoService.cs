@@ -17,5 +17,10 @@ namespace CapVerify.Domain.Services
             _tituloCaptalizacaoRepository = tituloCaptalizacaoRepository;
             _userRepository = userRepository;
         }
+
+        public override TituloCapitalizacao Add(TituloCapitalizacao obj)
+        {
+            return base.Add(obj);
+        }
     }
 }
